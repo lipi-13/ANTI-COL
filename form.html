@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Alcoholic University Survey</title>
+    <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Anti-Alcoholic University Survey</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Survey Questions</h2>
+            <p>Thank you for participating in our survey. Your responses will help us in our efforts to promote anti-alcoholism awareness on campus.</p>
+
+            <form action="submit_survey.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="alcohol_frequency">How often do you consume alcohol?</label>
+                <input type="radio" id="rarely" name="alcohol_frequency" value="rarely" required>
+                <label for="rarely">Rarely</label>
+                <input type="radio" id="occasionally" name="alcohol_frequency" value="occasionally" required>
+                <label for="occasionally">Occasionally</label>
+                <input type="radio" id="frequently" name="alcohol_frequency" value="frequently" required>
+                <label for="frequently">Frequently</label>
+
+                <label for="awareness">Are you aware of the negative effects of alcohol?</label>
+                <input type="checkbox" id="awareness" name="awareness" value="yes">
+                <label for="awareness">Yes</label>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Anti-Alcoholic University</p>
+    </footer>
+</body>
+</html>
